@@ -1,66 +1,73 @@
-.payment-container {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .payment-container {
     background: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 400px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
-  .payment-header {
+  
+  .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
   }
+  
   .timer {
     background: black;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
   }
-  .input-group {
-    margin-bottom: 10px;
+  
+  .form-group {
+    margin: 15px 0;
   }
-  .input-group label {
+  
+  label {
     display: block;
     font-weight: bold;
+    margin-bottom: 5px;
   }
-  .input-group input {
+  
+  input {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 4px;
+    padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
   }
-  .input-row {
+  
+  .expiry {
     display: flex;
     gap: 10px;
   }
-  .expiry {
-    display: flex;
-    align-items: center;
+  
+  .expiry input {
+    width: 50%;
   }
-  .expiry span {
-    margin: 0 5px;
-  }
-  .pay-button {
+  
+  .pay-btn {
     width: 100%;
-    background: blue;
+    padding: 12px;
+    background: #007bff;
     color: white;
-    padding: 10px;
     border: none;
+    font-size: 16px;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
   }
-  .payment-summary {
-    margin-top: 20px;
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
+  
+  .pay-btn:hover {
+    background: #0056b3;
   }
-  .card-display p,
-  .summary-details p {
-    margin: 5px 0;
-  }
-  .summary-details h3 {
-    margin-top: 10px;
-  }
+  
   
